@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * my-function - This is a description
+ * Description: This is a description
  */
 int main(void)
 {
