@@ -1,11 +1,6 @@
 #include <stdio.h>
 /**
- * main - Entry point
- * 
- * Description: Prints C to console
- * @parameter: void
- * 
- * Return: Always 0 (Success)
+ * my-function - This is a description
  */
 int main(void)
 {
