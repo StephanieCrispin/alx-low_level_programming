@@ -13,11 +13,11 @@
 int main(void)
 {
 	int n;
+    int k;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-    int k;
     if ((n % 10) < 6 && n != 0){
         k = n % 10;
         printf("Last digit of %d is %d the string and is less than 6 and not 0\n", n, k);
