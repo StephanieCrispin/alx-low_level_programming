@@ -11,21 +11,21 @@
 int main(void)
 {
 
-	int i, k;
+int i, k;
 
-	for (i = '0'; i <= '8'; i++)
+for (i = '0'; i <= '8'; i++)
+{
+	for (k = '1'; k <= '9'; k++)
 	{
-	    for (k = '1'; k <= '9'; k++)
+		if(i < k)
 		{
-			if(i < k)
+			putchar(i);
+			putchar(k);
+			if (i != '8' || (i == '8' && k != '9'))
 			{
-				putchar(i);
-				putchar(k);
-				if (i != '8' || (i == '8' && k != '9'))
-				{
-					putchar(',');
-					putchar(' ');
-				}
+				putchar(',');
+				putchar(' ');
+			}
 			}
 		}
 	}
