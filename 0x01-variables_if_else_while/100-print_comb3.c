@@ -17,7 +17,7 @@ for (i = '0'; i <= '8'; i++)
 {
 	for (k = '1'; k <= '9'; k++)
 	{
-		if(i < k)
+		if (i < k)
 		{
 			putchar(i);
 			putchar(k);
