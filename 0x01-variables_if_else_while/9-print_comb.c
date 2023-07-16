@@ -11,14 +11,24 @@
 int main(void)
 {
 	int i=0;
-	while(i < 9)
+	while(i < 10)
 	{
 		putchar(i + '0');
+		i++;
+		if(i <= 9){
 		putchar(',');
 		putchar(' ');
-		i++;
+		}
 	}
+// for (; i < 10; i++)
+// {
+// 	putchar(i + '0');
 
-	putchar(9 + '0');
+// 	if(i < 9){
+// 		putchar(',');
+// 		putchar(' ');
+// 	}
+// }
+
 	return (0);
 }
