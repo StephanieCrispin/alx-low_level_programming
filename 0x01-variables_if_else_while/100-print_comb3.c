@@ -8,7 +8,8 @@
 *Return: Always return 0
 */
 
-int main(void){
+int main(void)
+{
 
 	int i, k;
 
@@ -16,7 +17,7 @@ int main(void){
 	{
 	    for (k = '1'; k <= '9'; k++)
 		{
-			if(i > k)
+			if(i < k)
 			{
 				putchar(i);
 				putchar(k);
