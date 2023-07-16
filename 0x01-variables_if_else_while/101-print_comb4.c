@@ -3,13 +3,13 @@
 /**
 *main - Entry point
 *
-*Description - A C program that prints out all posible combinations of single numbers in three places
+*Description - A C program that prints out all posible combination of numbers
 *
 *Return: Always return 0
 */
 int main(void)
 {
-int i,k,j;
+int i, k, j;
 for (i = '0'; i <= '7'; i++)
 {
 	for (k = '0'; k <= '8'; k++)
