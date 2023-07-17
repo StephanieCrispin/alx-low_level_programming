@@ -16,17 +16,17 @@ for (i = '0'; i <= '7'; i++)
 	{
 		for (j = '0'; j <= '9'; j++)
 		{
-			if (i < k && k < j)
+		if (i < k && k < j)
+		{
+		putchar(i);
+		putchar(k);
+		putchar(j);
+		if (i != '7' || (i == '7' && k == '8' && j != '9'))
 			{
-				putchar(i);
-				putchar(k);
-				putchar(j);
-				if (i != '7' || (i == '7' && k == '8' && j != '9'))
-					{
-						putchar(',');
-						putchar(' ');
-					}
+				putchar(',');
+				putchar(' ');
 			}
+		}
 		}
 	}
 }
