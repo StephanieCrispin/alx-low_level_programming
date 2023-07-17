@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
-* main - Entry point
+*main - Entry point
 *
-* Description: A C function that prints two two possible number combinations
+*Description: A C function that prints two two possible number combinations
 *
-* Returns: Always return 0
+*Return: Always return 0
 */
 
 int main(void)
