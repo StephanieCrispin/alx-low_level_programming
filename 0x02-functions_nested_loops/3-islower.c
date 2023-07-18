@@ -5,6 +5,7 @@
 *
 * Description: A C program that prints the alphabets
 *
+*Return: Always return (0)
 */
 
 int _islower(int c)
@@ -18,4 +19,5 @@ int _islower(int c)
         else
             _putchar(0);
 	}
+    return (0);
 }
