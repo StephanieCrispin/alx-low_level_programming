@@ -1,7 +1,9 @@
 #include "main.h"
 
 /**
-* print _alphabet
+* print _alphabet - function
+*
+* Description: A C program that prints the alphabets
 *
 */
 void print_alphabet(void)
