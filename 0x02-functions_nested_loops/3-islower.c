@@ -10,7 +10,5 @@
 
 int _islower(int c)
 {
-	int i;
-
 	return (c >= 'a' && c <= 'z');
 }
