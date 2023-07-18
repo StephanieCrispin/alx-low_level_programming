@@ -19,13 +19,13 @@ for (i = '0'; i <= '7'; i++)
 		{
 			if (i < k && k < j)
 			{
-			putchar(i);
-			putchar(k);
-			putchar(j);
+				putchar(i);
+				putchar(k);
+				putchar(j);
 				if (i != '7' || (i == '7' && k == '8' && j != '9'))
 					{
-						putchar(',');
-						putchar(' ');
+					putchar(',');
+					putchar(' ');
 					}
 				}
 			}
