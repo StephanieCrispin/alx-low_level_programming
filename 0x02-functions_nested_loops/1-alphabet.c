@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* print _alphabet - Prints alphabets
+* print_alphabet -> Prints alphabets in lower case
 *
 * Description: A C program that prints the alphabets
 *
