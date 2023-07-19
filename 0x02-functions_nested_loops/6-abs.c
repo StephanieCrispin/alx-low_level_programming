@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* print_sign -> prints the sign of the alphabet
+* _abs -> returns absolute numbers
 *
 *@n: an integer argument
 *
