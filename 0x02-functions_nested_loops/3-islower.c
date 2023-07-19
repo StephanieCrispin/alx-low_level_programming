@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
-* _islower - main Entry
+* _islower -> checks if the character is lowercase
 *
-* Description: A C program that prints the alphabets
+*@c: a character argument
 *
-*Return: Always return (0)
+*Return: returns 1 and 0 depending on condition
 */
 
 int _islower(int c)
