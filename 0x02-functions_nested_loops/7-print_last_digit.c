@@ -5,11 +5,16 @@
 *
 *@n: an integer argument
 *
-*Return: return n
+*Return: return the last digit
 */
 
 int print_last_digit(int n)
 {
+    int y;
+
     n = n % 10;
+    y = n % 10;
+
+    _putchar(y + '0');
     return (n);
 }
