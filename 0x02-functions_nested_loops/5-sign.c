@@ -1,30 +1,31 @@
 #include "main.h"
 
 /**
-* isalpha - main Entry
+* print_sign -> prints the sign of the alphabet
 *
-* Description: A C program that prints the alphabets
+*@n: an integer argument
 *
-*Return: Always return (0)
+*Return: return 0, 1 or -1 depending on the condition
 */
 
 int print_sign(int n)
 {
-    int result;
+	int result;
 
-    if(n > 0){
-        _putchar('+');
-        result = 1;
-    }
-    else if ( n == 0)
-    {
-        _putchar(0 + '0');
-        result = 0;
-    }
-    else if (n < 0)
-    {
-        _putchar('-');
-        result = -1;
-    }
-    return result;
+	if (n > 0)
+	{
+		_putchar('+');
+		result = 1;
+	}
+	else if ( n == 0)
+	{
+		_putchar(0 + '0');
+		result = 0;
+	}
+	else if (n < 0)
+	{
+		_putchar('-');
+		result = -1;
+	}
+	return (result);
 }
