@@ -12,7 +12,10 @@ int print_last_digit(int n)
 {
 	int y;
 
-	if (n < 0 || n == INT_MIN)
+	if (n == INT_MIN)
+		n = -(n % 10);
+
+	if (n < 0)
 		n = n * -1;
 
 	n = n % 10;
