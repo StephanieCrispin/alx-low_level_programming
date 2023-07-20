@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-* print_alphabet_x10(void) -> Prints "alphabest*10"
-*/
+ * print_alphabet_x10(void) -> Prints "alphabest*10"
+ */
 
 void print_alphabet_x10(void)
 {
@@ -20,5 +20,4 @@ void print_alphabet_x10(void)
 		_putchar('\n');
 		j++;
 	}
-
 }
