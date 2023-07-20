@@ -1,11 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Description: A C program that checks for a bug
- *
- * Return: Always return 0
+ * main - causes an infinite loop
+ * Return: 0
  */
 
 int main(void)
