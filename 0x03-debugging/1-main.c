@@ -5,12 +5,12 @@
  *
  * Description: A C program that checks for a bug
  *
- * Return: Always 0 success
+ * Return: Always return 0
  */
 
 int main(void)
 {
-	int i;
+	/*int i;*/
 
 	printf("Infinite loop incoming :(\n");
 
