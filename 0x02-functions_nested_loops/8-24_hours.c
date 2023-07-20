@@ -1,33 +1,28 @@
-#include "main.h"
-
+#include <stdio.h>
 /**
-* 8-24_hours.c -> prints out time
-* Return: Always 0 success
-*/
-
+ *times_table -> Returns every minute in a day
+ */
 void jack_bauer(void)
 {
-    int i, j, k;
 
-    i = 0;
-    while(i < 23)
-    {
-        j = 0;
-        while( j < 23)
-        {
-            k = 0;
-            while (k < 59)
-            {
-                _putchar((j / 10) + '0');
-                _putchar((j % 10) + '0');
-                _putchar(':');
-                _putchar((k / 10) + '0');
-                _putchar((k % 10) + '0');
-                k++;
-            }
-            j++;
-        }
-        _putchar('\n');
-        i++;
-    }
+	int i, j;
+
+	for (i = 0; i <= 23; i++)
+	{
+		for (j = 0; j <= 59; j++)
+		{
+			putchar((i / 10) + '0');
+			putchar((i % 10) + '0');
+			putchar(':');
+			putchar((j / 10) + '0');
+			putchar((j % 10) + '0');
+
+			if (i < 98 || j < 99)
+			{
+				putchar('\n');
+			}
+		}
+	}
+
+	putchar('\n');
 }
