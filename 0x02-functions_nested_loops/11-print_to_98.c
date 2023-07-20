@@ -1,6 +1,6 @@
 #include <stdio.h>
 /*
- *times_table -> A function that prints out the 9 times table
+ *print_to_98 -> A function that prints out numbers to 98
  */
 
 void print_to_98(int n)
