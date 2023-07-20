@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * print_numbers -> Prints numbers from 0 - 9
  *
  * Description: A C pogram that prints out all the single numbers in base 10
  *
