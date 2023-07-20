@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * largest_number - adds two integers
+ * add -> adds two integers
  * @a: first integer
  * @b: second integer
  * Return: adds two integers
