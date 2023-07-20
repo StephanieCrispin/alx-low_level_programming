@@ -6,23 +6,26 @@
 
 void times_table(void)
 {
-	int i, j, l;
+	int i, j, k;
 
 	for (i = 0; i <= 9; i++)
 	{
-		_putchar('\n');
-		for (j = 0; j <= 9; j++)
-		{
-			i = i % 10;
-			l = j * i;
+		_putchar('0');
 
-			putchar(l + '0');
-			if (!(j == 9 && (l % 9 == 0)))
-			{
-				_putchar(',');
+		for (j = 1; j <= 9; j++)
+		{
+			_putchar(',');
+			_putchar(' ');
+
+			k = i * j;
+
+			if (k <= 9)
 				_putchar(' ');
-				_putchar(' ');
-			}
+			else
+				_putchar((k / 10) + '0');
+
+			_putchar((k % 10) + '0');
 		}
+		_putchar('\n');
 	}
 }
