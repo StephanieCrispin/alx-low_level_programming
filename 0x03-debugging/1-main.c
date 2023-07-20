@@ -1,13 +1,16 @@
 #include <stdio.h>
 
 /**
- * main - causes an infinite loop
- * Return: 0
+ * main - Entry point
+ *
+ * Description: A C program that checks for a bug
+ *
+ * Return: Always 0 success
  */
 
 int main(void)
 {
-	/*int i;*/
+	int i;
 
 	printf("Infinite loop incoming :(\n");
 
