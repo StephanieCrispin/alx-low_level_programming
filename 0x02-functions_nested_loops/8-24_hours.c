@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- *times_table -> Returns every minute in a day
+ *jack_bauer -> Returns every minute in a day
  */
 void jack_bauer(void)
 {
@@ -23,6 +23,4 @@ void jack_bauer(void)
 			}
 		}
 	}
-
-	putchar('\n');
 }
