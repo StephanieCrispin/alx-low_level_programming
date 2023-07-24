@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *swap_int -> Returns the length of a string
+ *_strlen -> Returns the length of a string
  *@s: A string pointer argument
  *Return: returns 1 or 0 based on argument
  */
