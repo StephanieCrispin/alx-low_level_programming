@@ -1,8 +1,7 @@
 #include "main.h"
 /**
- *_puts -> Prints out strings to stdout
- *@str: A pointer argument
- *Return: returns 1 or 0 based on argument
+ *print_rev -> Prints out strings to stdout in reverse
+ *@s: A pointer argument
  */
 
 void print_rev(char *s)
