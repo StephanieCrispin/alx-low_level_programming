@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  *puts2 -> Prints modulus of string
  *@str: A pointer argument
