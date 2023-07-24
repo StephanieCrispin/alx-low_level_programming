@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *rev_string -> Reverses a string
+ *puts2 -> Prints modulus of string
  *@str: A pointer argument
  */
 
