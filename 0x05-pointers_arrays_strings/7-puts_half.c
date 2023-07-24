@@ -6,14 +6,15 @@
 
 void puts_half(char *str)
 {
-    int length, middle, i;
+    int length = 0, middle, i;
+
+    printf("%s\n", str);
 
     while (str[length] != '\0')
         length++;
-
     middle = length / 2;
 
-    for (i = middle; str[i] < length; i++)
+    for (i = middle; i <= length; i++)
         _putchar(str[i]);
     _putchar('\n');
 }
