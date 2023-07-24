@@ -8,8 +8,6 @@ void puts_half(char *str)
 {
     int length = 0, middle, i;
 
-    printf("%s\n", str);
-
     while (str[length] != '\0')
         length++;
     middle = length / 2;
