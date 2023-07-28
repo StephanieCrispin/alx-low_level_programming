@@ -1,7 +1,9 @@
 #include "main.h"
 
 /**
- *
+ *cap_string -> capitalizes a string
+ * @x: first param
+ * Return: returns a string
  */
 
 char *cap_string(char *x)
