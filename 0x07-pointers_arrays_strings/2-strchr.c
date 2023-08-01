@@ -5,6 +5,7 @@
  * _strchr -> prints a buffer in hex
  * @s: First
  * @c: Second
+ * Return: On success char
  */
 
 char *_strchr(char *s, char c)
