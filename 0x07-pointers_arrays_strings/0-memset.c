@@ -2,7 +2,11 @@
 #include <string.h>
 
 /**
- * simple_print_buffer -> prints a buffer in hex
+ * _memset -> prints a buffer in hex
+ * @s: First
+ * @b: Second
+ * @n: Third
+ * Return: String
  */
 
 char *_memset(char *s, char b, unsigned int n)
