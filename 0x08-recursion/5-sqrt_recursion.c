@@ -14,18 +14,18 @@ int _sqrt_recursion(int n)
 
 /**
  * _sqrt -> recursive square root
- * @n: number
+ * @u: number
  * @i: iterator
  * Return: a number
  */
 
-int _sqrt(int n, int i)
+int _sqrt(int u, int i)
 {
-	int square = i * 8;
+	int square = i * i;
 
-	if (square > n)
+	if (square > u)
 		return (-1);
-	if (square == n)
+	if (square == u)
 		return (i);
-	return (_sqrt(n, i + 1));
+	return (_sqrt(u, i + 1));
 }
