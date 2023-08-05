@@ -2,6 +2,7 @@
 
 /**
  * _atoi -> Does something
+ * @s: A string argument
  * Return: returns an integer
  */
 
