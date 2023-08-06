@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * main - Main Entry
+ * @argc: First param
+ * @argv: Second param
+ * Return: return 0
+ */
 int main(int argc, char *argv[])
 {
 	int number, y, result = 0;
