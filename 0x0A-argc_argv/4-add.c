@@ -17,10 +17,8 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			printf("%d\n", argv[i][j]);
 			if (argv[i][j] > '9' || argv[i][j] < '0')
 			{
 				printf("%s\n", "Error");
@@ -35,6 +33,5 @@ int main(int argc, char *argv[])
 		result += num;
 	}
 	printf("%d\n", result);
-
 	return (0);
 }
