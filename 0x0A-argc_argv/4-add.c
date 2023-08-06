@@ -11,21 +11,25 @@
 
 int main(int argc, char *argv[])
 {
-	int i, result = 0;
+	int result = 0, num, u, j, k;
 
-	for (i = 1; i < argc; i++)
+	for (u = 1; u < argc; u++)
 	{
-		if (!isdigit(*argv[i]))
+		for (j = 0; argv[u][j] != '\0'; j++)
 		{
-			printf("Error\n");
-			return (1);
-		}
-		else
-		{
-			result = result + atoi(argv[i]);
+			if (argv[u][j] > '9' || argv[u][j] < '0')
+			{
+				printf("%s\n", "Error");
+				return (1);
+			}
 		}
 	}
 
+	for (k = 1; k < argc; k++)
+	{
+		num = atoi(argv[k]);
+		result += num;
+	}
 	printf("%d\n", result);
 	return (0);
 }
