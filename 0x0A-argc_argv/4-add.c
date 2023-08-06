@@ -2,8 +2,6 @@
 #include <stdlib.h>
 #include <ctype.h>
 
-int check_that_numbers_are_positive(int argc, char *argv[]);
-int add_positive_numbers(int argc, char *argv[]);
 /**
  * main - Main Entry
  * @argc: First param
