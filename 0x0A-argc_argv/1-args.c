@@ -4,6 +4,7 @@ void print_number_of_arguments(int argc);
 /**
  * main - Main Entry
  * @argc: First param
+ * @argv: Second param
  * Return: returns 0
  */
 
