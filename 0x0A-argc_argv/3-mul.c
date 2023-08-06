@@ -12,13 +12,13 @@ void multiply_args(int argc, char *argv[]);
 
 int main(int argc, char *argv[])
 {
-    if (argc < 3)
-    {
-        printf("%s\n", "Error");
-        return (1);
-    }
-    multiply_args(argc, argv);
-    return (0);
+	if (argc < 3)
+	{
+		printf("%s\n", "Error");
+		return (1);
+	}
+	multiply_args(argc, argv);
+	return (0);
 }
 
 /**
@@ -29,11 +29,11 @@ int main(int argc, char *argv[])
 
 void multiply_args(int argc, char *argv[])
 {
-    int i, result = 1;
+	int i, result = 1;
 
-    for (i = 1; i < argc; i++)
-    {
-        result *= atoi(argv[i]);
-    }
-    printf("%d\n", result);
+	for (i = 1; i < argc; i++)
+	{
+		result *= atoi(argv[i]);
+	}
+	printf("%d\n", result);
 }
