@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 }
 
 /**
- * multiply_args - multiply two arguments
+ * multiply_args -> multiply two arguments
  * @argc: First param
  * @argv: Second param
  */
