@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+
+int add_positive_numbers(int argc, char *argv[]);
+/**
+ * main - Main Entry
+ * @argc: First param
+ * @argv: Second param
+ * Return: returns 0
+ */
+
+int main(int argc, char *argv[])
+{
+	add_positive_numbers(argc, argv);
+	return (0);
+}
+/**
+ * add_positive_numbers - A function that adds positive numbers
+ * @argc: First param
+ * @argv: Second param
+ * Return: returns 0
+ */
+
+int add_positive_numbers(int argc, char *argv[])
+{
+	int i, result = 0;
+
+	for (i = 1; i < argc; i++)
+	{
+		if (!isdigit(*argv[i]))
+		{
+			printf("Error\n");
+			return (1);
+		}
+		else
+		{
+			result = result + atoi(argv[i]);
+		}
+	}
+
+	printf("%d\n", result);
+	return (0);
+}
