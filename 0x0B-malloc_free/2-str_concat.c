@@ -19,7 +19,7 @@ char *str_concat(char *s1, char *s2)
 	while (s2[len2])
 		len2++;
 
-	count = len + len2 + 1;
+	count = len + len2 + 2;
 
 	str = malloc(sizeof(char) * count);
 
