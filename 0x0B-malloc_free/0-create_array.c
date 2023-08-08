@@ -4,6 +4,7 @@
  * create_array -> Creates an array, initializes it to a char
  * @size: First Param
  * @c: Second Param
+ * Return: returns a pointer to a char;
  */
 
 char *create_array(unsigned int size, char c)
