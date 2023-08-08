@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * str_concat -> A pointer that concatenates two strings
@@ -12,8 +13,8 @@ char *str_concat(char *s1, char *s2)
 	int i, len, k, l;
 	char *str;
 
-	k = _strlen(s1);
-	l = _strlen(s2) - 1;
+	k = strlen(s1);
+	l = strlen(s2) - 1;
 
 	str = malloc(sizeof(char) * (k + l));
 
