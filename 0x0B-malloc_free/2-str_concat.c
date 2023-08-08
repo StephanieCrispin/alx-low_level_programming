@@ -13,13 +13,18 @@ char *str_concat(char *s1, char *s2)
 	int i, len = 0, len2 = 0, k, count;
 	char *str;
 
-	while (s1[len])
-		len++;
+	for (i = 0;; i++)
+	{
+		if (s1[i] == '\0')
+		{
+			break;
+		}
+	}
 
 	while (s2[len2])
 		len2++;
 
-	count = len + len2 + 2;
+	count = len + len2 + 1;
 
 	str = malloc(sizeof(char) * count);
 
