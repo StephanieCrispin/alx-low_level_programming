@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * *alloc_grid -> create Pointer to pointers of 2D int array
+ * alloc_grid -> create Pointer to pointers of 2D int array
  * @width: First Param
  * @height: Second Param
- * Return : On success int pointer to pointer
+ * Return: a int pointer to pointer
  */
 
 int **alloc_grid(int width, int height)
