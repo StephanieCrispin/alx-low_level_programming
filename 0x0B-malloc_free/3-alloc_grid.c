@@ -1,7 +1,7 @@
 #include "main.h"
 
-/***
- * alloc_grid -> create Pointer to pointers of 2D int array
+/**
+ * *alloc_grid -> create Pointer to pointers of 2D int array
  * @width: First Param
  * @height: Second Param
  * Return : On success int pointer to pointer
@@ -18,7 +18,7 @@ int **alloc_grid(int width, int height)
 	grid = malloc(height * sizeof(int *));
 
 	if (grid == NULL)
-		return NULL;
+		return (NULL);
 
 	for (i = 0; i < height; i++)
 	{
@@ -30,7 +30,7 @@ int **alloc_grid(int width, int height)
 				free(grid[k]);
 
 			free(grid);
-			return NULL;
+			return (NULL);
 		}
 
 		for (j = 0; j < width; j++)
