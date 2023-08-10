@@ -9,17 +9,23 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-    void *ptr;
+	unsigned int b;
+	char *fill;
+	void *ptr;
 
-    if (nmemb == 0)
-        return (NULL);
-    if (size == 0)
-        return (NULL);
+	if (nmemb == 0)
+		return (NULL);
+	if (size == 0)
+		return (NULL);
 
-    ptr = (void *)malloc(size * nmemb);
+	ptr = malloc(size * nmemb);
 
-    if (ptr == NULL)
-        return (NULL);
+	if (ptr == NULL)
+		return (NULL);
 
-    return (ptr);
+	fill = ptr;
+
+	for (b = 0; b < (nmemb * size); b++)
+		fill[b] = '\0';
+	return (ptr);
 }
