@@ -11,8 +11,9 @@
  */
 
 /**
- * dog_t - A new type for dog
+ * dog_t - Typedef for new dog
  */
+
 typedef struct dog dog_t;
 
 struct dog
