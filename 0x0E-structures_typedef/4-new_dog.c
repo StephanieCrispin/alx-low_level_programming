@@ -45,6 +45,7 @@ int _strlen(char *str)
  * @name: First param
  * @age: Second param
  * @owner: Third param
+ * Return: A new dog
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
