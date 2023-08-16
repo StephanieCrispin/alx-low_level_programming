@@ -7,6 +7,7 @@
  * @array: array of integers
  * @size: size of the array
  * @cmp: the function that compares array elements
+ * Return: an integer based on success or failure(0 or 1)
  */
 
 int int_index(int *array, int size, int (*cmp)(int))
@@ -21,7 +22,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 		if (cmp(array[i]))
 		{
 
-			return i;
+			return (i);
 		}
 	}
 	return (-1);
