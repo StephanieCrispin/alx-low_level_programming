@@ -2,6 +2,8 @@
 
 /**
  * main - My main Entry
+ * @argc: First Param
+ * @argv: Second Param
  * Description: carries out calculations in program
  * from argument from the command line
  * Return: Returns the result of calculation
