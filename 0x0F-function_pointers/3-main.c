@@ -9,7 +9,7 @@
 
 int main(int argc, char *argv[])
 {
-	char operator= argv[2];
+	char *operator= argv[2];
 	int num1 = atoi(argv[1]), num2 = atoi(argv[3]), result, (*operation)(int, int);
 
 	if (argc < 4 || argc > 4)
