@@ -3,7 +3,7 @@
 /**
  * print_numbers -> My program will print out as many numbers come in as
  * arguments, this numbers will be separated by a special separator value
- * @seperator: First function argument
+ * @separator: First function argument
  * @n: Second function parameter
  */
 
