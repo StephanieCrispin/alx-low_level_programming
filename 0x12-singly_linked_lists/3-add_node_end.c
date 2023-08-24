@@ -27,5 +27,5 @@ list_t *add_node_end(list_t **head, const char *str)
         pointer = pointer->next;
     }
     pointer->next = tempValue;
-    retun(tempValue);
+    return (tempValue);
 }
