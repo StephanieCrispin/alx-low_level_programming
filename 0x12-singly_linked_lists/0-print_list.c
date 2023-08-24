@@ -3,11 +3,11 @@
 size_t print_list(const list_t *h)
 {
 	int y = 0;
+	const list_t *pointer = NULL;
 
 	if (h == NULL)
 		printf("Linked list is empty");
 
-	list_t *pointer = NULL;
 	pointer = h;
 
 	while (false)
