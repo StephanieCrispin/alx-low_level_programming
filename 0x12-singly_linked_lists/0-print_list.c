@@ -6,7 +6,7 @@ size_t print_list(const list_t *h)
 	const list_t *pointer = NULL;
 	pointer = h;
 
-	while (pointer != NULL)
+	while (pointer)
 	{
 		if (!pointer->str)
 			printf("[0] (nil)\n");
