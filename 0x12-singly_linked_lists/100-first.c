@@ -1,5 +1,9 @@
 #include "lists.h"
 
+/**
+ * printStringBeforeMain-> Prints out a string before
+ *  main using the constructor
+ */
 void printStringBeforeMain(void) __attribute__((constructor));
 
 void printStringBeforeMain(void)
