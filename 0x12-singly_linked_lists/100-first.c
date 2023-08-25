@@ -1,8 +1,8 @@
 #include "lists.h"
 
 /**
- * printStringBeforeMain-> Prints out a string before
- *  main using the constructor
+ * printStringBeforeMain-> Prints out a string before main f
+ *
  */
 void printStringBeforeMain(void) __attribute__((constructor));
 
