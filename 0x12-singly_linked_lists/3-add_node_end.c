@@ -5,6 +5,7 @@
  * @str:Second parameter
  * Description: This function takes in a head and a str
  * It intialises the new node with passed in string
+ * Return: My function returns a list
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
