@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_list -> My function prints out a list
+ * print_list-> My function prints out a list
  * @h: The one and only parameter
  * Return: an integer that represent size of the list to size_t
  */
@@ -9,7 +9,6 @@
 size_t print_list(const list_t *h)
 {
 	size_t y = 0;
-
 	const list_t *pointer = NULL;
 
 	pointer = h;
