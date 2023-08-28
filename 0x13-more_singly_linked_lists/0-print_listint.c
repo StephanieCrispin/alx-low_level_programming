@@ -7,8 +7,9 @@ size_t print_listint(const listint_t *h)
 
     while (ptr)
     {
-        ptr = ptr->next;
+        printf("%d", ptr->n);
         num += 1;
+        ptr = ptr->next;
     }
     return (num);
 }
