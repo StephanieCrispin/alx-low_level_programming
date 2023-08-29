@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * print_listint-> prints out a list of node values
+ * print_listint- prints out a list of node values
  * @h: Only parameter in func
  * Return: returns the size of the list
  */
