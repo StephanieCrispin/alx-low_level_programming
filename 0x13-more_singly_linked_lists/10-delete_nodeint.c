@@ -1,7 +1,10 @@
 #include "lists.h"
 
 /**
- *
+ *delete_nodeint_at_index - Deletes a node at a specific index provided as arg
+ *@head: first param
+ *@index: second param
+ *Return: returns an integer value
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
