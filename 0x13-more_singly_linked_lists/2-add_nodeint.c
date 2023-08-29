@@ -1,5 +1,11 @@
 #include "lists.h"
 
+/**
+ * listint_t - adds a node to the begginning of the node list
+ * @head: First Parameter
+ * @n: The second Parameter for this function
+ * Return: returns our new node to us
+ */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *numb;
