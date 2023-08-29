@@ -2,7 +2,7 @@
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	listint_t *ptr;
+	listint_t *ptr = NULL;
 	listint_t *endNode;
 
 	ptr->next = NULL;
