@@ -1,7 +1,8 @@
 #include "lists.h"
 
 /**
- * pop_listint - Its supposed the node at a paticular index and return its value
+ * pop_listint - Its supposed the node at a paticular index
+ * and return its value
  * @head: One and only parameter
  * Return: returns an integer
  */
