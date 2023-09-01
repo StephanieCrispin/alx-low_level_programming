@@ -7,8 +7,8 @@ int set_bit(unsigned long int *n, unsigned int index)
 	if (index > sizeof(unsigned long int) * 8)
 		return (-1);
 
-	for (tempValue = 1; index > 0; tempValue = tempValue * 2, index--)
-		*n = *n + tempValue;
+	for (tempValue = 1; index > 0; index--, tempValue = tempValue * 2)
+		*n += tempValue;
 
 	return (1);
 }
