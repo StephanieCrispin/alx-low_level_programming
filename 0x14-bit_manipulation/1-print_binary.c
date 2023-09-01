@@ -13,7 +13,6 @@ void print_binary(unsigned long int n)
 	if (n == '\0')
 	{
 		printf("0");
-		;
 		return;
 	}
 
@@ -29,5 +28,4 @@ void print_binary(unsigned long int n)
 		else
 			printf("0");
 	}
-	printf("\n");
 }
