@@ -10,7 +10,7 @@ void print_binary(unsigned long int n)
 	int i;
 	unsigned int temp;
 
-	if (n == '\0')
+	if (n == 0)
 	{
 		printf("0");
 		return;
