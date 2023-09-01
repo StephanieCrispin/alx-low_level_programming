@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * set_bit - sets a bit at a given position(index) to 1
+ * @index: Second param
+ * @n: First Param
+ * Return: returns an int
+ */
+
 int set_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned long int tempValue;
