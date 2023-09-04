@@ -14,7 +14,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	size = read(file_descrip, buff, letters);
 
-	output = write(stdin, buff, size);
+	output = write(STDIN_FILENO, buff, size);
 
 	if (file_descrip == -1 || size == -1 || output == -1)
 	{
