@@ -1,5 +1,9 @@
 #include "main.h"
-/*
+/**
+ *read_textfile - Reads a text file from input filename
+ *@filename: FIrst param
+ *@letters: Second param
+ *Return: the size of the buffer
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)
