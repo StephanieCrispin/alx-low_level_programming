@@ -5,9 +5,13 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t file_descrip, size, output;
-	char *buff = malloc(sizeof(char) * letters);
+	char *buff;
 
-	if (!buff || !filename)
+	if (filename = '\0')
+		return (0);
+
+	buff = malloc(sizeof(char) * letters);
+	if (buff = '\0')
 		return (0);
 
 	file_descrip = open(filename, O_RDONLY);
@@ -30,5 +34,5 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	free(buff);
 	close(file_descrip);
-	return (size);
+	return (output);
 }
