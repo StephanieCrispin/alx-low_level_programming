@@ -8,11 +8,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	ssize_t file_descrip, size, output;
 	char *buff;
 
-	if (filename == NULL)
+	if (!filename)
 		return (0);
 
 	buff = malloc(sizeof(char) * letters);
-	if (buff == NULL)
+	if (!buff)
 		return (0);
 
 	file_descrip = open(filename, O_RDONLY);
