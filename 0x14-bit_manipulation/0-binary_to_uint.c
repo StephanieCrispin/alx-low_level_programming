@@ -2,6 +2,7 @@
 
 /**
  * binary_to_uint - Converts binary to digit
+ * Like an integer numbar
  * @b: Only parameter
  * Return: Returns an unsigned int
  */
@@ -27,7 +28,7 @@ unsigned int binary_to_uint(const char *b)
 		 length--, pow = pow * 2)
 	{
 		if (b[length] == '1')
-			decimalNum += pow;
+			decimalNum = decimalNum + pow;
 	}
 
 	return (decimalNum);
