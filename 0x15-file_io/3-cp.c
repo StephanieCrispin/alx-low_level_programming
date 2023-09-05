@@ -32,15 +32,15 @@ void copy_file(const char *src_file, const char *dest_file)
     while ((bytes_read = read(src_fd, buffer, BUFFER_SIZE)) > 0)
     {
         bytes_written = write(dest_fd, buffer, bytes_read);
-        if (bytes_written == -1)
+        if (bytes_written == -1 || bytes_written != bytes_read)
         {
-            error_exit("Can't write to destination file", 99);
+            error_exit("Write error to destination file", 99);
         }
     }
 
     if (bytes_read == -1)
     {
-        error_exit("Can't read from source file", 98);
+        error_exit("Read error from source file", 98);
     }
 
     close(src_fd);
