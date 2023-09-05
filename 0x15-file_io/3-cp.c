@@ -23,11 +23,9 @@ char *make_buffer(char *file)
 
 void close_file_func(int fd)
 {
-    int c;
+    int k = close(fd);
 
-    c = close(fd);
-
-    if (c == -1)
+    if (k == -1)
     {
         dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
         exit(100);
@@ -52,7 +50,7 @@ int main(int argc, char *argv[])
 
     do
     {
-        if (f == -1 || r == -1)
+        if (r == -1 || f == -1)
         {
             dprintf(STDERR_FILENO,
                     "Error: Can't read from file %s\n", argv[1]);
