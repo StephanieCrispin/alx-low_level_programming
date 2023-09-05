@@ -5,7 +5,7 @@
  *  param to a file
  * @filename: First param
  * @text_content: Second param
- * Reuturn: Returns an int
+ * Return: Returns an int
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
