@@ -9,14 +9,14 @@
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int re, wri, len;
+	int re, wri, len = 0;
 
 	if (!filename)
 		return (-1);
 
 	if (text_content)
 	{
-		for (len = 0; text_content[len] != '\0';)
+		while (text_content[len])
 			len++;
 	}
 
