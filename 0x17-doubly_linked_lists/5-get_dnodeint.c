@@ -11,5 +11,7 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
         if (count == index)
             break;
     }
+    if (index > count)
+        return (NULL);
     return (head);
 }
