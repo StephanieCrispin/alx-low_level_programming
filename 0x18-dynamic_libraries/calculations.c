@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include <stdio.h>
 
 /**
@@ -54,7 +53,6 @@ int div(int a, int b)
     if (b != 0)
         return (a / b);
     printf("Error\n");
-    exit(100);
 }
 
 /**
@@ -71,7 +69,6 @@ int mod(int a, int b)
     if (b == 0)
     {
         printf("Error\n");
-        exit(100);
     }
     return (a % b);
 }
