@@ -3,19 +3,20 @@
 /**
  * len_of_items_in_table - returns the length of a hash table
  * @ht: The hash table
+ * Return: An int
  */
 
 int len_of_items_in_table(hash_table_t *ht)
 {
-    int i, count;
+	int i, count;
 
-    for (i = 0; i < ht->size; i++)
-    {
-        if (ht->array[i] != NULL)
-            count += 1;
-    }
+	for (i = 0; i < ht->size; i++)
+	{
+		if (ht->array[i] != NULL)
+			count += 1;
+	}
 
-    return (count);
+	return (count);
 }
 
 /**
@@ -25,18 +26,18 @@ int len_of_items_in_table(hash_table_t *ht)
 
 void hash_table_print(const hash_table_t *ht)
 {
-    int i;
-    int items_in_table_count = len_of_items_in_table(ht);
-    if (ht == NULL)
-        return;
-    putchar("{");
+	int i;
+	int items_in_table_count = len_of_items_in_table(ht);
+	if (ht == NULL)
+		return;
+	putchar("{");
 
-    for (i = 0; i < ht->size; i++)
-    {
-        if (ht->array[i] != NULL)
-            printf("%s : %s", ht->array[i]->key, ht->array[i]->value);
-        if (i < items_in_table_count)
-            putchar(",");
-    }
-    printf("}\n");
+	for (i = 0; i < ht->size; i++)
+	{
+		if (ht->array[i] != NULL)
+			printf("%s : %s", ht->array[i]->key, ht->array[i]->value);
+		if (i < items_in_table_count)
+			putchar(",");
+	}
+	printf("}\n");
 }
