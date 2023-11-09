@@ -11,5 +11,9 @@ unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {
 	unsigned long int index = hash_djb2(key);
 
+	/* djb2 receives the string used to generate the hash value */
+	/* that is the sum of ascii values in the string and then % size */
+	/* to get the index position inside the array of the hash t. */
+
 	return (index % size);
 }
