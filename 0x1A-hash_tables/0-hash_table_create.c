@@ -9,7 +9,7 @@
 hash_table_t *hash_table_create(unsigned long int size)
 {
 
-	long unsigned int i = 0;
+	unsigned long int i = 0;
 	hash_table_t *newTable;
 	if (!size)
 		return (NULL);
@@ -22,7 +22,8 @@ hash_table_t *hash_table_create(unsigned long int size)
 		return (NULL);
 	}
 	newTable->size = size;
-	newTable->array = (hash_node_t **)calloc(newTable->size, sizeof(hash_node_t *));
+	newTable->array =
+			(hash_node_t **)calloc(newTable->size, sizeof(hash_node_t *));
 
 	if (newTable->array == NULL)
 	{
