@@ -3,11 +3,14 @@
 /**
  * hash_table_create - create a hash table
  * @size: sizeof the table
- * Return - returns a hash table
+ * Return: returns a hash table
  */
 
 hash_table_t *hash_table_create(unsigned long int size)
 {
+    if (!size)
+        return (NULL);
+
     int i = 0;
     /*Creates a new hashtable*/
 
