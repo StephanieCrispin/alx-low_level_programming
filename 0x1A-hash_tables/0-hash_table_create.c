@@ -23,6 +23,8 @@ hash_table_t *hash_table_create(unsigned long int size)
 		return (NULL);
 	}
 	newTable->size = size;
+	/* The  calloc()  function allocates memory for an array */
+	/* void *calloc(size_t nmemb, size_t size) */
 	newTable->array =
 			(hash_node_t **)calloc(newTable->size, sizeof(hash_node_t *));
 
