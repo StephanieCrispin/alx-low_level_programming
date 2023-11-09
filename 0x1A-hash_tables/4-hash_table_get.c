@@ -1,23 +1,30 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_get - gets an item from a hash table
- * @ht: table item
- * @key: The key
- * Return: A char pointer
+ * hash_table_get - gets from a hash table
+ * @ht: table item to be gotten
+ * @key: The key to get it
+ * Return: A char pointer argument
  */
 
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-	/*Searches for hashtable key and returns null if it doesnt exist*/
-	unsigned long int index = hash_djb2(key);
-	unsigned long int keyIndex = key_index(index, ht->size);
-	hash_node_t *item = ht->array[keyIndex];
+	unsigned long int index;
+	hash_node_t *hashed = NULL;
 
-	if (keyIndex != NULL)
+	if (ht == NULL || !key)
+		return (NULL);
+
+	index = key_index((const unsigned char *)key, ht->size);
+	hashed = ht->array[index];
+
+	for (; hashed != NULL; hashed = hashed->next)
 	{
-		if (strcmp(item->key, key) == 0)
-			return item->value;
+		if (strcmp(hashed->key, key) == 0)
+			return (hashed->value);
+		/* otherwise keeps looking */
+		hashed = hashed->next;
 	}
+	/* if the index is not found cuz the ley doesn't exists */
 	return (NULL);
 }

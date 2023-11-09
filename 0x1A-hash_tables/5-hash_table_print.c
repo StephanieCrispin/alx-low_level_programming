@@ -1,43 +1,34 @@
 #include "hash_tables.h"
 
 /**
- * len_of_items_in_table - returns the length of a hash table
- * @ht: The hash table
- * Return: An int
- */
-
-int len_of_items_in_table(hash_table_t *ht)
-{
-	int i, count;
-
-	for (i = 0; i < ht->size; i++)
-	{
-		if (ht->array[i] != NULL)
-			count += 1;
-	}
-
-	return (count);
-}
-
-/**
- * hash_table_print - prints out the items in a hash table
- * @ht: The first hash table argument
+ * hash_table_print - prints from a hash table
+ * @ht: table item to be gottten
+ * @key: The key to get it
+ * Return: A char pointer
  */
 
 void hash_table_print(const hash_table_t *ht)
 {
-	int i;
-	int items_in_table_count = len_of_items_in_table(ht);
+	hash_node_t *hash_n;
+	int global_nodes_counter = 0;
+	unsigned long int x;
+	/*long unsigned int lenght;*/
+
+	/* if NULL returns void and prints nothing just {} */
 	if (ht == NULL)
 		return;
-	putchar("{");
-
-	for (i = 0; i < ht->size; i++)
+	printf("{");
+	for (x = 0; x < ht->size; x++)
 	{
-		if (ht->array[i] != NULL)
-			printf("%s : %s", ht->array[i]->key, ht->array[i]->value);
-		if (i < items_in_table_count)
-			putchar(",");
+		hash_n = ht->array[x];
+		while (hash_n)
+		{
+			if (global_nodes_counter)
+				printf(", ");
+			printf("'%s': '%s'", hash_n->key, hash_n->value);
+			hash_n = hash_n->next;
+			global_nodes_counter++;
+		}
 	}
 	printf("}\n");
 }
