@@ -24,8 +24,13 @@ hash_table_t *hash_table_create(unsigned long int size)
     newTable->size = size;
     newTable->array = (hash_node_t **)calloc(newTable->size, sizeof(hash_node_t *));
 
-    for (i = 0; i < size; i++)
-        newTable->array[i] = NULL;
+    if (newTable->array == NULL)
+    {
+        free(newTable);
+        return (NULL);
 
-    return newTable;
-}
+        for (i = 0; i < size; i++)
+            newTable->array[i] = NULL;
+
+        return newTable;
+    }
